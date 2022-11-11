@@ -1,0 +1,152 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+#task-input {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  border: 1px solid transparent;
+  color: white;
+  font-style: italic;
+}
+
+
+
+#input-error {
+  padding: 15px;
+  background-color: rgb(204, 0, 0);
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+#submit-input {
+  background-color: #121212;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#submit-input:hover {
+  background-color: gray;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+#submit-input:active {
+  background-color: rgb(48, 48, 48);
+}
+
+
+.clear-done {
+  background-color: #121212;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.clear-done:hover {
+  background-color: rgb(199, 0, 0);
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.clear-done:active {
+  background-color: rgb(104, 0, 0);
+}
+
+#task-input:focus {
+  outline: none;
+  background-color: #272727;
+  border: 1px solid gray;
+}
+
+h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  font-style: italic;
+  font-size: 15px;
+}
+
+#main {
+  width: 500px;
+  margin: 10px;
+  max-height: 600px;
+  overflow-y: auto;
+  background-color: #161616;
+  border-radius: 5px;
+}
+
+#main::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2c2c2c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(73, 73, 73);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(80, 80, 80);
+}
