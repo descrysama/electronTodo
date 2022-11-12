@@ -9,6 +9,11 @@ export class todoList implements ITodolist{
         let newTodo = new Task(content);
         this.tasks.push(newTodo);
     }
+    
+    addCustomTask(task: Task) {
+        let newTodo = new Task(task.content, task.done, task.id);
+        this.tasks.push(newTodo)
+    }
 
     toggleTask(id: string): void {
         this.tasks.map(task => task.id == id ? task.toggle() : null)

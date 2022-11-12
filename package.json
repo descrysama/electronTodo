@@ -11,6 +11,11 @@
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
   },
+  "build": {
+    "files":[
+      "./"
+    ]
+  },
   "keywords": [],
   "author": {
     "name": "Desc",

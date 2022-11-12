@@ -5,10 +5,10 @@ export class Task implements ITask{
     content: string;
     done: boolean;
     
-    constructor(content: string) {
-        this.id = Math.floor(Math.random() * 1000).toString();
+    constructor(content: string, done?: boolean, id?: string) {
+        id ? this.id = id : this.id = Math.floor(Math.random() * 1000).toString();
         this.content = content;
-        this.done = false;
+        done ? this.done = done : this.done = false
     }
 
     toggle(): void {
